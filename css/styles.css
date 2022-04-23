@@ -82,25 +82,7 @@ img {
     margin-right: 93px;
 }
 
-.contacts-icon {
-    margin-right: 10px;
-}
-.contacts-icon:hover {
-    fill: var(--accent-color);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------Верхняя линия--------------- */
 .header-nav .link {
     display:block;
     color:var(--title-text-color);
@@ -124,12 +106,23 @@ img {
     line-height:1.2;
     letter-spacing: 0.02em;
     padding-bottom: 32px;
-    }
-
-.header-contacts a:hover,
-.header-contacts a:focus {
-    color:var(--accent-color);
 }
+
+.contacts-icon {
+     margin-right: 10px; 
+}
+
+
+.hover-adres:hover,
+.hover-adres:focus {
+    color: var(--accent-color);
+}
+
+.hover-adres:hover .contacts-icon,
+.hover-adres:focus .contacts-icon {
+fill: var(--accent-color)
+}
+
 
 /* ---------------Шапка--------------- */
 
@@ -314,6 +307,65 @@ img {
     fill: #ffffff;
 }
 
+/* ---------------Постоянные клиенты--------------- */
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+.client h2 {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.client-link {
+    margin-right: 30px;
+}
+
+.client-link:last-child {
+    margin-right: 0px;
+}
+
+.client-icon {
+    fill: #AFB1B8;
+}
+
+
+.client-href {
+    display:inline-block;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}  
+
+.client-href:hover,
+.client-href:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.client-href:hover .client-icon,
+.client-href:focus .client-icon {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+
+
+
+
 
 /* ---------------Подвал--------------- */
 .footer {
@@ -358,7 +410,7 @@ address {
 }
 
 .logo-footer {
-    display: block;
+    display:block;
     margin-bottom: 20px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -370,6 +422,53 @@ address {
 .studio-footer {
     color: #FFFFFF;
 }
+
+
+.footer-icon {
+    display: flex;
+}
+
+.footer-icon-adres {
+    margin-right: 70px;
+}
+
+.footer-icon-party h2 {
+    color: var(--section-text-color);
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.icon-footer {
+    fill: var(--section-text-color);
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.party-icon {
+    margin-right: 10px;
+}
+
+.party-icon:last-child {
+    margin-right: 0px;
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+    background-color: var(--accent-color);
+}
+
+
+
+
 
 
 /* ---------------Portfolio-css--------------- */
@@ -459,6 +558,7 @@ background-color: var(--accent-color);
 .flex-header {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 /* ---------------FlexBox-team--------------- */
