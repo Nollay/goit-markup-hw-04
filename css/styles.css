@@ -132,7 +132,9 @@ fill: var(--accent-color)
     padding-bottom: 200px;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
      url(../images/bg-logo-hero.jpg);
-    
+     max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-text {
@@ -214,13 +216,11 @@ fill: var(--accent-color)
     height: 120px;
     width: 270px;
     background: #F5F4FA;
-    margin-right: 30px;
+    margin-bottom: 30px;
     border-radius: 4px;
 }
 
-.special-icon:last-child {
-    margin-right: 0px;
-}
+
 
 
 
@@ -364,7 +364,7 @@ fill: var(--accent-color)
     width: 170px;
     height: 92px;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
@@ -546,6 +546,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     margin-top: 0;
     margin-bottom: 0;
     display: block;
+    text-decoration: none;
+
 }
 
 .portfolio-img:hover,
@@ -606,7 +608,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 
 .feature-element {
     width: 270px;
-    margin-right: 30px;
 }
 
 .feature-element:last-child {
